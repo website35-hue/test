@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sistem Elektrik | Profesyonel Elektrik Çözümleri</title>
+<meta name="description" content="Elektrik tesisat, bakım, arıza ve proje çözümleri. Hızlı ve güvenilir elektrik hizmeti.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter;}
+body{background:#0b1220;color:#fff;}
+
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  padding:18px 50px;
+  background:rgba(10,15,25,0.85);
+  backdrop-filter: blur(10px);
+  z-index:1000;
+}
+.logo{font-weight:800;color:#38bdf8;font-size:20px;}
+nav a{color:#fff;margin-left:20px;text-decoration:none;opacity:.8}
+nav a:hover{opacity:1}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background: radial-gradient(circle at top,#1e293b,#0b1220);
+  padding:20px;
+}
+.hero h1{font-size:54px;color:#38bdf8}
+.hero p{margin-top:15px;opacity:.8;font-size:18px;max-width:600px}
+.btn{
+  margin-top:25px;
+  padding:14px 28px;
+  background:#38bdf8;
+  color:#000;
+  font-weight:700;
+  border-radius:10px;
+  text-decoration:none;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.05)}
+
+/* SECTIONS */
+section{padding:80px 10%;}
+
+.title{font-size:28px;color:#38bdf8;margin-bottom:30px}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#111a2e;
+  padding:25px;
+  border-radius:14px;
+  transition:.3s;
+  border:1px solid rgba(255,255,255,0.05);
+}
+.card:hover{
+  transform:translateY(-8px);
+  background:#16223b;
+}
+
+/* PROJECTS */
+.project{
+  background:#0f1a30;
+  padding:20px;
+  border-radius:12px;
+}
+
+/* CONTACT */
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border:none;
+  border-radius:8px;
+  background:#111a2e;
+  color:#fff;
+}
+button{
+  margin-top:15px;
+  padding:12px 20px;
+  background:#38bdf8;
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 16px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  opacity:.6;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:36px}
+  nav{padding:15px 20px}
+  .contact{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Sistem Elektrik</div>
+  <div>
+    <a href="#services">Hizmetler</a>
+    <a href="#projects">Projeler</a>
+    <a href="#contact">İletişim</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Güvenli Elektrik Çözümleri</h1>
+  <p>Ev, ofis ve endüstriyel projeler için profesyonel elektrik tesisat, bakım ve arıza hizmetleri.</p>
+  <a class="btn" href="#contact">Hemen Teklif Al</a>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="title">Hizmetlerimiz</div>
+  <div class="grid">
+    <div class="card">⚡ Elektrik Tesisat Kurulumu</div>
+    <div class="card">🔧 Arıza & Teknik Servis</div>
+    <div class="card">💡 Aydınlatma Sistemleri</div>
+    <div class="card">🏭 Endüstriyel Projeler</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="title">Referans Projeler</div>
+  <div class="grid">
+    <div class="project">✔ AVM Elektrik Altyapısı</div>
+    <div class="project">✔ Akıllı Villa Sistemleri</div>
+    <div class="project">✔ Fabrika Otomasyon</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="title">İletişim</div>
+
+  <div class="contact">
+    <div>
+      <input type="text" placeholder="Ad Soyad">
+      <input type="email" placeholder="E-posta">
+      <textarea rows="5" placeholder="Mesajınız"></textarea>
+      <button>Gönder</button>
+    </div>
+
+    <div>
+      <h3>📍 Konum</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+        width="100%" height="250" style="border:0;border-radius:10px;"></iframe>
+
+      <p style="margin-top:15px;opacity:.8">
+        İzmir merkezli elektrik hizmeti
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP -->
+<a class="whatsapp"
+href="https://wa.me/905XXXXXXXXX?text=Merhaba%20teklif%20almak%20istiyorum">
+💬 WhatsApp
+</a>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Sistem Elektrik | Tüm hakları saklıdır
+</footer>
+
+</body>
+</html>
